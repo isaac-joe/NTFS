@@ -1,6 +1,13 @@
 # 启用 MacOS 自动读写 NTFS
-FUSE for OS X + NTFS-3G 的一次性解决方案
+
+FUSE for OS X + NTFS-3G 的一次性解決方案
+
 https://github.com/isaac-joe/NTFS
+
+
+[繁體中文](https://github.com/isaac-joe/NTFS/blob/master/README-zhcn.md) | [简体中文](https://github.com/isaac-joe/NTFS/blob/master/README-zhcn.md)
+
+
 
 ### 适用 MacOS 版本
 OS X 10.11 El Capitan, macOS 10.12 Sierra 以及
@@ -14,7 +21,7 @@ https://support.apple.com/zh-cn/HT201314
 
 2. 执行终端机指令
 3. 安装 Homebrew ，学习连结：
-https://brew.sh/index_zh-tw.html
+https://brew.sh/index_zh-cn.html
 
 若上述步骤无法完成，或者并非 100% 确定；
 请直接放弃，并招唤工具国 🤹‍♂️
