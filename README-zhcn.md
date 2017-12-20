@@ -13,7 +13,7 @@ https://github.com/isaac-joe/NTFS
 OS X 10.11 El Capitan, macOS 10.12 Sierra 以及
  macOS 10.13 High Sierra.
 
-###开始之前
+### 开始之前
 你需要的熟练的技术有
 
 1. Recovery Mode 回复模式，学习连结：

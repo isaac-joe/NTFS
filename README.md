@@ -9,7 +9,7 @@ https://github.com/isaac-joe/NTFS
 
 
 
-###開始之前 你需要的熟練的技術有
+### 開始之前 你需要的熟練的技術有
 
 1. Recovery Mode 回復模式  
 https://support.apple.com/zh-tw/HT201314
