@@ -17,12 +17,6 @@ https://support.apple.com/zh-tw/HT201314
 3. 安裝 Homebrew  
 https://brew.sh/index_zh-tw.html
 
-若上述步驟無法完成，或者並非 100% 確定； 
-請直接放棄，並招喚工具國 🤹‍♂️ 
-讓工具人一起為您的 Mac 健康把關！
-
-#就是好工具 #就是好工具 #就是好工具
-
 > # 開始
 
 #### 1. 安裝 FUSE for OS X + NTFS-3G
