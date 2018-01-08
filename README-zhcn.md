@@ -16,7 +16,7 @@ https://github.com/isaac-joe/NTFS
 https://support.apple.com/zh-tw/HT201314
 2. 在终端机执行指令
 3. 安装 Homebrew  
-https://brew.sh/index_zh-tw.html
+https://brew.sh/index_zh-cn.html
 
 #### 开启终端机
 
