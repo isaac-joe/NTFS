@@ -24,10 +24,10 @@ https://brew.sh/index_zh-tw.html
 
 
 ```
-# 安裝 osxfuse
+// 安裝 osxfuse
 $ brew cask install osxfuse
 
-# 安裝 ntfs-3g
+// 安裝 ntfs-3g
 $ brew install ntfs-3g
 ```
 
