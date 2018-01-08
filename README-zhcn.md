@@ -1,54 +1,69 @@
-# 启用 MacOS 自动读写 NTFS
+# 开启 MacOS 自动读写 NTFS
 
-FUSE for OS X + NTFS-3G 的一次性解決方案
+FUSE for OS X + NTFS-3G 的一次性解决方案
 
 https://github.com/isaac-joe/NTFS
 
 
-[繁體中文](https://github.com/isaac-joe/NTFS/blob/master/README-zhcn.md) | [简体中文](https://github.com/isaac-joe/NTFS/blob/master/README-zhcn.md)
+[繁體中文](https://github.com/isaac-joe/NTFS/blob/master/README.md) | [简体中文](https://github.com/isaac-joe/NTFS/blob/master/README-zhcn.md)
 
 
+> # 开始之前
 
-### 适用 MacOS 版本
-OS X 10.11 El Capitan, macOS 10.12 Sierra 以及
- macOS 10.13 High Sierra.
+熟悉如何进入回复模式，与建立执行环境
 
-### 开始之前
-你需要的熟练的技术有
+1. 如何 进入 MacOS 回复模式 Recovery Mode   
+https://support.apple.com/zh-tw/HT201314
+2. 在终端机执行指令
+3. 安装 Homebrew  
+https://brew.sh/index_zh-tw.html
 
-1. Recovery Mode 回复模式，学习连结：
-https://support.apple.com/zh-cn/HT201314
+#### 开启终端机
 
-2. 执行终端机指令
-3. 安装 Homebrew ，学习连结：
-https://brew.sh/index_zh-cn.html
-
-> # 开始
+执行指令：
 
 
-#### 1. 安装 FUSE for OS X + NTFS-3G
+```
+# 安装 osxfuse
+$ brew cask install osxfuse
 
-终端机执行 2 个指令：
+# 安装 ntfs-3g
+$ brew install ntfs-3g
+```
 
-`
-brew cask install osxfuse
-brew install ntfs-3g
-`
+#### 进入 Mac 回复模式
 
-#### 2. 解除 “系统完整保护”，开启NTFS 读写能力 
+在按下电源按钮将 Mac 开机，或在 Mac 开始重新启动之后，立即按住键盘上的 Command-R 或[其他“macOS 回复”按键组合](https://support.apple.com/zh-cn/HT204904)之一。持续按住这些按键，直到出现 Apple 标志或旋转的地球。看到工具程式视窗，即表示完成启动：
 
-Rovery Mode 终端机指令：
+![Terminal](https://github.com/isaac-joe/NTFS/blob/master/images/terminal.png?raw=true)
 
-`csrutil disable`
+进入【OS X 工具程式】后，请由上方的选单列点选【工具程式】➤【终端机】
 
-正常开机，终端机指令：
-`
-sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
-sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
-`
-再到 Rovery Mode 终端机指令：
+执行指令：
 
-`csrutil enable`
+```
+// 解除 “系统完整保护”功能
+$ csrutil disable
+```
 
-关闭视窗后重新开机，便开启 NTFS 读写功能。
+重新开机 ➤ 进入正常模式 ➤ 开启终端机，执行指令：
+
+```
+// 执行后，询问并输入登入用户的密码
+$ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
+
+// 指令执行后，询问并输入登入用户的密码
+$ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
+```
+
+重新开机 ➤ 再次进入 Mac 回复模式 ➤ 开启终端机，执行指令：
+
+```
+// 开启“系统完整保护”功能
+$ csrutil enable
+```
+
+结束并重新开机 ➤ 进入正常模式MacOS ➤ NTFS 读写功能已开启
+
+## 完成！
 
